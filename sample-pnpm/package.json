@@ -1,0 +1,12 @@
+{
+  "name": "sample-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve:dev": "pnpm run --filter=\"./apps/**/**\" --filter=\"./libs/**\" dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

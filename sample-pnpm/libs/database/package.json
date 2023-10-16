@@ -1,0 +1,30 @@
+{
+  "name": "@sample-project/database",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "tsc": "tsc",
+    "prisma": "prisma",
+    "migrate:dev": "prisma migrate dev",
+    "db:seed": "prisma db seed",
+    "studio": "prisma studio",
+    "build": "prisma generate && tsc --build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "prisma": {
+    "seed": "ts-node ./prisma/seeds/main.ts"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^8.1.0",
+    "@types/node": "^20.8.5",
+    "prisma": "^5.4.2",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "@prisma/client": "5.4.2"
+  }
+}
